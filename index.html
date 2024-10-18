@@ -10,62 +10,76 @@
 <body>
     <header>
         <h1>Workshop </h1>
+        <nav>
+            <ul>
+                <li id="seeForm">Add dog</li>
+                <li id="seeList">See dog list</li>
+
+            </ul>
+        </nav>
     </header>
 
     <main>
-        <form action="" id="profileForm">
-            <!-- Name, Date of Birth, Sex, and Color -->
-
-            <label>
-                Name:
-                <input type="text" name="name" id="name" required>
-            </label>
-
-            <label>
-                Date of Birth:
-                <input type="date" name="birth" id="birth" required>
-            </label>
-
-            <fieldset>
-                <legend>Sex:</legend>
+        <div id="form-wrapper">
+            <form action="" id="profileForm">
+                <!-- Name, Date of Birth, Sex, and Color -->
+    
                 <label>
-                    Male:               
-                    <input type="radio" name="sex" checked value="Male">
+                    Name:
+                    <input type="text" name="name" id="name" required>
                 </label>
+    
                 <label>
-                    Female:
-                    <input type="radio" name="sex" value="Female">
-                </label> 
-            </fieldset>    
-            
-            <label>
-                Imag Url:
-                <input type="text" name="img" id="img-url">
-            </label>
-
-            <label>
-                Color:
-                <input type="color" name="color" id="color">
-            </label>
-
-            <input type="submit" value="Save">
-        </form>
-
-        <div id="dog-list">
-            <table id="dog-list-table">
-                <thead>
-                    <tr>
-                        <th>Name</th>
-                        <th>Date of Birth</th>
-                        <th>Sex</th> 
-                        <th>Color</th>
-                        <th>Picture</th>
-                    </tr>
-                </thead>                
-                <tbody id="dog-list-tbody"></tbody>                
-            </table>
-
+                    Date of Birth:
+                    <input type="date" name="birth" id="birth" required>
+                </label>
+    
+                <fieldset>
+                    <legend>Sex:</legend>
+                    <label>
+                        Male:               
+                        <input type="radio" name="sex" checked value="Male">
+                    </label>
+                    <label>
+                        Female:
+                        <input type="radio" name="sex" value="Female">
+                    </label> 
+                </fieldset>    
+                
+                <label>
+                    Imag Url:
+                    <input type="text" name="img" id="img-url">
+                </label>
+    
+                <label>
+                    Color:
+                    <input type="color" name="color" id="color">
+                </label>
+    
+                <input type="submit" value="save">
+                <input type="reset" value="clear">
+            </form>
         </div>
+        
+        <div id="dog-list-wrapper">
+            <div id="dog-list">
+                <table id="dog-list-table">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Date of Birth</th>
+                            <th>Sex</th> 
+                            <th>Color</th>
+                            <th>Picture</th>
+                        </tr>
+                    </thead>                
+                    <tbody id="dog-list-tbody"></tbody>                
+                </table>
+    
+            </div>
+        </div>
+
+        
     </main>
 
     <footer>

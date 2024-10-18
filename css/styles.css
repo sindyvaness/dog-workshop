@@ -4,7 +4,28 @@ body {
 
 header {
     text-align: center;
-    color: rgb(247, 80, 2);
+    
+}
+
+h1 {
+    color: brown;
+    font-size: 3rem;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    display: block;
+    list-style: none;
+    background-color:  rgb(247, 80, 2);
+    color: white;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    margin-left: 0.5rem;
+    border-radius: 5px;
+
 }
 
 main {
@@ -44,7 +65,7 @@ input[type="color"] {
     width: 20%;
 }
 
-input[type="submit"] {
+input[type="submit"], input[type="reset"] {
     display: block;
     background-color: rgb(247, 80, 2);
     border: 0;
@@ -54,6 +75,11 @@ input[type="submit"] {
     height: 25px;
     align-self: center;
     box-shadow: 3px 3px 5px gray;
+}
+
+input[type="reset"] {
+    background-color: rgb(234, 157, 121);
+    color: brown;
 }
 
 table {

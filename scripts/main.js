@@ -1,6 +1,18 @@
 
 const dogsArray = [];
 
+document.getElementById('dog-list-wrapper').style.display = 'none';
+
+document.getElementById('seeList').addEventListener('click', () => {
+    document.getElementById('form-wrapper').style.display = 'none';
+    document.getElementById('dog-list-wrapper').style.display = 'block';
+});
+
+document.getElementById('seeForm').addEventListener('click', () => {
+    document.getElementById('form-wrapper').style.display = 'block';
+    document.getElementById('dog-list-wrapper').style.display = 'none';
+});
+
 
 class Dog  {
     constructor(dogName, dateBrith, sex, image, color) {
