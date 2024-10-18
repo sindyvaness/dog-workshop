@@ -57,7 +57,7 @@ input[type="submit"] {
 }
 
 table {
-    padding: 1rem;
+    padding: 0.5rem;
 
 }
 
@@ -82,7 +82,13 @@ table, td {
     border-radius: 5px;
 }
 
+table img {
+    max-width: 150px;
+    height: 150px;
+}
+
 footer {
     text-align: center;
     color: brown;
 }
+

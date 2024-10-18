@@ -3,12 +3,13 @@ const dogsArray = [];
 
 
 class Dog  {
-    constructor(dogName, dateBrith, sex, color) {
+    constructor(dogName, dateBrith, sex, image, color) {
         // Name, Date of Birth, Sex, and Color
         this.name = dogName;
         this.dateBrith = dateBrith;
-        this.sex = sex;
+        this.sex = sex;        
         this.color = color;
+        this.image = image;
     }
 
     add() {
@@ -22,6 +23,7 @@ document.getElementById('profileForm').addEventListener('submit', (e) => {
         document.getElementById('name').value,
         document.getElementById('birth').value,
         document.querySelector('input[name="sex"]:checked').value,
+        document.getElementById('img-url').value,
         document.getElementById('color').value);
 
     dog.add();
@@ -48,7 +50,10 @@ function printDog() {
             const td = document.createElement('td');
 
             if (key == "color") {
-                td.innerHTML = `<input type="color" value=${element[key]}>`;
+                td.innerHTML = `<input type="color" value="${element[key]}">`;
+            }
+            else if (key == "image") {
+                td.innerHTML = `<img src="${element[key]}">`;
             }
             else {
                 td.innerText = element[key];
