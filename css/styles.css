@@ -1,0 +1,88 @@
+body {
+    background-color: antiquewhite;
+}
+
+header {
+    text-align: center;
+    color: rgb(247, 80, 2);
+}
+
+main {
+    width: 70%;
+    margin: auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    background-color: burlywood;
+    border-radius: 10px;
+    padding: 1rem;
+    width: 70%;
+    margin: auto;
+    box-shadow: 3px 3px 5px gray;
+    margin-bottom: 1rem;
+}
+
+label, input {
+    display: block;
+    margin-bottom: 0.5rem;
+    width: 100%;
+}
+
+fieldset {
+    margin-bottom: 0.5rem;
+    
+}
+
+fieldset > label, input[type="radio"] {
+    display: inline;
+    width: fit-content;
+}
+
+input[type="color"] {
+    width: 20%;
+}
+
+input[type="submit"] {
+    display: block;
+    background-color: rgb(247, 80, 2);
+    border: 0;
+    border-radius: 5px;
+    color: white;
+    width: 20%;
+    height: 25px;
+    align-self: center;
+    box-shadow: 3px 3px 5px gray;
+}
+
+table {
+    padding: 1rem;
+
+}
+
+td, th {
+    width: 10%;
+    text-align: left;
+    padding: 4px;
+}
+
+th {
+    background-color: burlywood;
+    color: brown;
+}
+
+td {
+    font-size: small;
+}
+table, td {
+
+    border: 2px solid burlywood;
+    /* border-collapse: collapse; */
+    border-radius: 5px;
+}
+
+footer {
+    text-align: center;
+    color: brown;
+}

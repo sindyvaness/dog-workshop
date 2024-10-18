@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workshop</title>
+    <script src="scripts/main.js" defer></script>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Workshop </h1>
+    </header>
+
+    <main>
+        <form action="" id="profileForm">
+            <!-- Name, Date of Birth, Sex, and Color -->
+
+            <label>
+                Name:
+                <input type="text" name="name" id="name" required>
+            </label>
+
+            <label>
+                Date of Birth:
+                <input type="date" name="birth" id="birth" required>
+            </label>
+
+            <fieldset>
+                <legend>Sex:</legend>
+                <label>
+                    Male:               
+                    <input type="radio" name="sex" checked value="Male">
+                </label>
+                <label>
+                    Female:
+                    <input type="radio" name="sex" value="Female">
+                </label> 
+            </fieldset>            
+
+            <label>
+                Color:
+                <input type="color" name="color" id="color">
+            </label>
+
+            <input type="submit" value="Save">
+        </form>
+
+        <div id="dog-list">
+            <table id="dog-list-table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Date of Birth</th>
+                        <th>Sex</th>
+                        <th>Color</th>
+                    </tr>
+                </thead>                
+                <tbody id="dog-list-tbody"></tbody>                
+            </table>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; Sindy Montano, 2024</p>
+    </footer>
+</body>
+</html>
